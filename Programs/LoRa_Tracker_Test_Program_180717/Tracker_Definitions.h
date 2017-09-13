@@ -49,6 +49,7 @@ LoRaTracker_Locator2 - Tracker PCB, 50mm x 22mm with the date 23/04/17, for DRF1
 #define PLED1 8                       //pin number for LED on Tracker
 #define lora_PReset 9                 //pin where LoRa device reset line is connected
 #define lora_PNSS 10                  //pin number where the NSS line for the LoRa device is connected
+#define PLED2 13                      //pin number for LED on Pro Mini
 #define SupplyAD A0                   //pin for supply AD
 #define RCPulse A1                    //pin used to read RC pulse
 #define GPSTX A2                      //pin number for TX output - RX into GPS

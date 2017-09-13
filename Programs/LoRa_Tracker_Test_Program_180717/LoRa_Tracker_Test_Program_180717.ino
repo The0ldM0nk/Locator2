@@ -271,17 +271,17 @@ void checkRCpulse()
 void setup()
 {
   unsigned int lvar1 = 0;
-  pinMode(PLED1, OUTPUT); 			        //for PCB LED
-  pinMode(PLED2, OUTPUT); 			        //for Pro Mini LED, Pin13
-  pinMode(GPSPOWER, OUTPUT); 			        //for GPS Power control
-  digitalWrite(GPSPOWER, LOW);                          //GPS on 
-  pinMode(lora_TonePin, INPUT_PULLUP);		        //ensure tone out pin is input
-  pinMode(lora_PReset, OUTPUT);			        //LoRa Device reset line
-  pinMode (lora_PNSS, OUTPUT);			        //LoRa Device select line
+  pinMode(PLED1, OUTPUT); 			               //for PCB LED
+  pinMode(PLED2, OUTPUT); 			               //for Pro Mini LED, Pin13
+  pinMode(GPSPOWER, OUTPUT); 			           //for GPS Power control
+  digitalWrite(GPSPOWER, LOW);               //GPS on 
+  pinMode(lora_TonePin, INPUT_PULLUP);		   //ensure tone out pin is input
+  pinMode(lora_PReset, OUTPUT);			         //LoRa Device reset line
+  pinMode (lora_PNSS, OUTPUT);			           //LoRa Device select line
   digitalWrite(lora_PNSS, HIGH);
   digitalWrite(lora_PReset, HIGH);
 
-  Serial.begin(38400);                                   //setup Serial console ouput
+  Serial.begin(38400);                       //setup Serial console ouput
   Serial.println(F(programname));
   Serial.println(F(programversion));
   Serial.println(F(dateproduced));

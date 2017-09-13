@@ -3,8 +3,7 @@
 #define dateproduced "230717"
 #define aurthorname "Stuart Robinson"
 
-//#define LoRaTracker_Locator2
-#define PIHTracker3
+#define LoRaTracker_Locator2
 
 /*
 LoRaTracker Programs
