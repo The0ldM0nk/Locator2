@@ -51,6 +51,7 @@ void setup()
   Serial.println(F(dateproduced));
   Serial.println(F(aurthorname));
   Serial.println();
+  Wire.begin();
  }
 
 
