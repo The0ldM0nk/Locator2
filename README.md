@@ -5,5 +5,5 @@ The LoRaTracker series of boards use Semtechs LoRa devices for long distance tra
 The Locator reads a GPS and sends the Locators co-ordinates via LoRa to be picked up by a remote receiver.
 
 Stuart Robinson
-LoRaTracker
+www.LoRaTracker.uk
 July 2017
