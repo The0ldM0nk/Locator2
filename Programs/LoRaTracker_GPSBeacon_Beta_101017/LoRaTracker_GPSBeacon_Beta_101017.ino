@@ -1100,7 +1100,7 @@ void setup()
     if (readConfigByte(TXEnable))                        //is TX enabled - needed because of fence limits
     {
       Serial.println(F("Check Tone"));                   //check tone indicates navigation model 6 set (if checktone enabled!)
-      lora_Tone2(1000, 3000, 5);                         //Transmit an FM tone, 1000hz, 3000ms, 5dBm
+      lora_Tone(1000, 3000, 5);                         //Transmit an FM tone, 1000hz, 3000ms, 5dBm
     }
 #endif
   }
@@ -1121,7 +1121,7 @@ void setup()
   GPS_SetCyclicMode();                                     //set this regardless of whether hot fix mode is enabled
 #endif
 
-  lora_Tone2(500, 500, 2);                                  //Transmit an FM tone, 500hz, 500ms, 2dBm
+  lora_Tone(500, 500, 2);                                  //Transmit an FM tone, 500hz, 500ms, 2dBm
   digitalWrite(LED1, LOW);
   sleepSecs(2);                                            //wait for GPS to shut down
 
