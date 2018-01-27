@@ -1036,7 +1036,7 @@ void processPacket()
       ptr = 4;                                                  //bind packet has 4 bytes of key
       Serial.println(F("Bind RX"));
 
-      for (i = addr_StartConfigData; i <= addr_EndConfigData; i++)
+      for (i = addr_StartBindData; i <= addr_EndBindData; i++)
       {
         j = lora_RXBUFF[ptr++];
         Memory_WriteByte(i, j);
